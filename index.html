@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Task Manager</title>
+  </head>
+  <body>
+    <form class="form task-form">
+      <h4>task manager</h4>
+      <div class="form-control">
+        <input
+          class="form-input task-input"
+          type="text"
+          placeholder="e.g. wash dishes"
+        />
+        <button class="btn submit-btn">submit</button>
+      </div>
+      <small class="form-alert">there was an error</small>
+    </form>
+
+    <section class="tasks-container">
+      <p class="loading-text">Loading...</p>
+      <div class="tasks">
+        <div class="single-task">
+          <h5>
+            <i class="fas fa-check-circle"></i>
+            first task
+          </h5>
+          <div class="task-links">
+            <a class="edit-link" href="task.html">
+              <i class="fas fa-edit"></i>
+            </a>
+            <button class="delete-btn" data-id="123" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="single-task task-completed">
+          <h5>
+            <i class="fas fa-check-circle"></i>
+            second task
+          </h5>
+          <div class="task-links">
+            <a class="edit-link" href="task.html">
+              <i class="fas fa-edit"></i>
+            </a>
+            <button class="delete-btn" data-id="123" type="button">
+              <i class="fas fa-trash"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Edit Task</title>
+  </head>
+  <body>
+    <form class="form single-task-form">
+      <h4>edit task</h4>
+      <div class="form-control">
+        <label class="form-label">task ID</label>
+        <p class="task-edit-id">1234546879</p>
+      </div>
+
+      <div class="form-control">
+        <label class="form-label">name</label>
+        <input
+          class="form-input task-edit-name"
+          type="text"
+          value="write code"
+        />
+      </div>
+
+      <div class="form-control">
+        <label class="form-label">completed</label>
+        <input class="task-edit-completed" type="checkbox" />
+      </div>
+      <button class="btn btn-block task-edit-btn" type="submit">edit</button>
+      <div class="form-alert text-small">there was an error</div>
+    </form>
+    <a class="btn back-link" href="index.html">back to tasks</a>
+  </body>
+</html>
